@@ -9,13 +9,13 @@ x = datetime.datetime.now()
 created_at = x.strftime("%Y-%m-%d %H:%M:%S")
 
 ##Parameter
-docker_registry_url = "docker-registry.apps.crp-dev.allianz"
-docker_user = "xxxx.yyy@allianz.com"
-docker_token = "YYYYYYYYYYYYYYY"
+docker_registry_url = "{your-url-of-registry-source}"
+docker_user = "{username}"
+docker_token = "{your_token}}"
 
-acr_url = "xxxx.azurecr.io"
-acr_user = "acr-admin" 
-acr_access_key = "XXXXXXXXXXXXXXXXX"
+acr_url = "{your-url-of-registry-destination}"
+acr_user = "{username}" 
+acr_access_key = "{your_key}"
 
 def get_catalog():
 

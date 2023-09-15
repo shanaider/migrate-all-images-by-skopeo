@@ -10,9 +10,9 @@ Please following this link: https://github.com/containers/skopeo/blob/main/insta
 # Preparation
 1. Setting Url, User and Token of the docker registry in Python script
 ```
-docker_registry_url = "docker-registry.apps.crp-dev.allianz"
-docker_user = "thanaphat.nuangjumnong@allianz.com"
-docker_token = "YYYYYYYYYYYYYYY"
+docker_registry_url = "{your-url-of-registry-source}"
+docker_user = "{username}"
+docker_token = "{your_token}}"
 ```
 
 Note: you can get that infomation on the Portal of Openshift
@@ -20,9 +20,11 @@ Note: you can get that infomation on the Portal of Openshift
 
 2. Setting URL, User and Access-Key of the ACR.
 ```
-acr_url = "crpvalidation.azurecr.io"
-acr_user = "CRPValidation" 
-acr_access_key = "XXXXXXXXXXXXXXXXX"
+##Parameter
+
+acr_url = "{your-url-of-registry-destination}"
+acr_user = "{username}" 
+acr_access_key = "{your_key}"
 ```
 
 # How to run
